@@ -24,7 +24,7 @@ export default function Signup() {
     });  
 
       alert("you signup successfully");  
-      history.push("/signin");
+    //   history.push("/signin");
     }
 
     return (
