@@ -15,8 +15,8 @@ export default function Signup() {
       e.preventDefault();
      auth.createUserWithEmailAndPassword(email,password)
     .then((userCredential) => {
-     db.collection("users").doc(userCredential.user.uid).add({
-       uid  : userCredential.uid,
+     db.collection("users").doc(userCredential.user.uid).set({
+    //    uid  : userCredential.uid,
        email: email,
        name : firstname,
        createdAt :new Date()
